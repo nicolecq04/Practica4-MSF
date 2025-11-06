@@ -23,10 +23,9 @@ El modelizado de sistemas fisiológicos es una herramienta importante en Ingenie
 La asignatura de Modelado de Sistemas Fisiológicos forma parte del plan de estudios de la carrera en Ingeniería Biomédica con la siguiente competencia general del curso: Utiliza las propiedades de los circuitos RLC para describir la dinámica de sistemas fisiológicos, obtener modelos matemáticos y aplicar el control clásico, esto con el objetivo de integrar los principios de la Ingeniería de Control, la Electrónica Analógica y las Ciencias de la Computación con la Anatomía y Fisiología del cuerpo humano para proporcionar descripciones cuantitativas y cualitativas de sistemas fisiológicos complejos con el objetivo de modelizar, analizar, controlar, ilustrar y predecir su dinámica tanto en el corto como en el largo plazo.
 
 ## Objetivos
-
-1. Resolver el sistema de EDOs (5.1) (5.3) mediante el métodod e Euler (diferencias nitas).
-2. Utilizar las condiciones iniciales x1 (0) = 59:03, x2 (0) = 44:27 y x3 (0) = 885:42.
-3. Considerar el caso de transfusión sanguínea del individuo.
+1. Resolver el sistema de EDOs mediante el método de Euler.
+2. Utilizar las condiciones iniciales x1(0) = 59:03, x2(0) = 44:27 y x3(0) = 885:42.
+3. Graficar el caso con transfusión sanguínea y sin transfusión sanguínea del individuo.
  
 
 ## Descripción detallada del sistema
