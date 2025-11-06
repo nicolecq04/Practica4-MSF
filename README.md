@@ -24,13 +24,23 @@ La asignatura de Modelado de Sistemas Fisiológicos forma parte del plan de estu
 
 ## Objetivos
 1. Resolver el sistema de EDOs mediante el método de Euler.
-2. Utilizar las condiciones iniciales x1(0) = 59:03, x2(0) = 44:27 y x3(0) = 885:42.
+2. Utilizar las condiciones iniciales x1(0) = 59, x2(0) = 44 y x3(0) = 885.
 3. Graficar el caso con transfusión sanguínea y sin transfusión sanguínea del individuo.
  
 
 ## Descripción detallada del sistema
 
 El siguiente modelo matemático de tres EDOs de primer orden es un modelo mecanicista de compartimento para la eritropoyesis después de la pérdida de sangre en personas sanas, fenómeno que se puede modelizar como un proceso dinámico no lineal.  Con respecto a los parámetros, X0 refleja la cantidad absoluta de células que se destinan al linaje eritroide y que maduran en el primer compartimento de células precursoras eritroides. Las tasas de transición y las tasas de mortalidad entre los compartimentos están dadas por k1, k2 y , estas tasas son independientes de la hormona eritropoyetina. La compensación de la pérdida de sangre se describe mediante un término de retroalimentación de los eritrocitos a las células en proliferación basado en la pérdida fraccional de eritrocitos. Con base en lo anterior, se introducen los parámetros y , que se utilizan para la descripción de las características individuales de la eritropoyesis. Se asume que cada individuo tiene un recuento medio de eritrocitos indicado por el parámetro Base. 
+El sistema se resolvio con los siguientes parametros de gamma y beta: 
+gamma = [0.769, 0.388, 0.510, 0.590, 0.262, 0.324, 0.356, 0.089, 0.243, 0.057];
+ beta = [1.650, 0.867, 1.617, 2.615, 1.518, 2.676, 0.891, 2.557, 0.925, 0.089];
+
+y con las siguientes condiciones iniciales:
+x1(0) = 56.3662   56.3749   59.6322   60.2565   56.1576   58.5392   59.7709 58.2355   61.7724   59.1515
+x2(0) = 42.0358   42.0423   44.4715   44.9370   41.8802   43.6564   44.5749   43.4299   46.0675   44.1129
+x3(0) = 845.4935  845.6239  894.4837  903.8474  842.3636  878.0881  896.5640  873.5330  926.5854  887.2718
+
+
 
 Palabras clave: Eritropoyesis; Regeneración de glóbulos rojos; Modelo matemático; Simulaciones numéricas.
 
