@@ -24,8 +24,7 @@ La asignatura de Modelado de Sistemas Fisiológicos forma parte del plan de estu
 
 ## Objetivos
 1. Resolver el sistema de EDOs mediante el método de Euler.
-2. Utilizar las condiciones iniciales x1(0) = 59, x2(0) = 44 y x3(0) = 885.
-3. Graficar el caso con transfusión sanguínea y sin transfusión sanguínea del individuo.
+2. Graficar el caso con transfusión sanguínea y sin transfusión sanguínea del individuo.
  
 
 ## Descripción detallada del sistema
