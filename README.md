@@ -1,10 +1,10 @@
-\[!\[Open in MATLAB Online]
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=nicolecq04/Practica4-MSF)
 
-# Práctica: Sistema musculoesquelético
+# Práctica:Regeneración de glóbulos rojos
 
 ## Información de la estudiante
 
-Corina Plata-Ante \[03210981]; corina.plata@tectijuana.edu.mx
+Camacho Quezada Nicole Zoe [22211747]; L22211747@tectijuana.edu.mx
 
 Modelado de Sistemas Fisiológicos
 
@@ -24,35 +24,27 @@ La asignatura de Modelado de Sistemas Fisiológicos forma parte del plan de estu
 
 ## Objetivos
 
-1. Convertir el diagrama mecánico al diagrama eléctrico.
-2. Calcular la función de transferencia aplicando el principio de superposición.
-3. Calcular el error en estado estacionario y la estabilidad en lazo abierto.
-4. Emular y simular la respuesta del circuito en Simulink/Simscape a la señal impulso unitario.
-5. Sintonizar las ganancias de un controlador PID para eliminar el error entre la entrada y la salida del sistema control-caso.
-6. Obtener la respuesta en lazo abierto y en lazo cerrado con el controlador PID en Spyder/Python con la función de transferencia.
+1. Resolver el sistema de EDOs (5.1) (5.3) mediante el métodod e Euler (diferencias nitas).
+2. Utilizar las condiciones iniciales x1 (0) = 59:03, x2 (0) = 44:27 y x3 (0) = 885:42.
+3. Considerar el caso de transfusión sanguínea del individuo.
+ 
 
 ## Descripción detallada del sistema
 
-El término F0 representa la fuerza desarrollada por el elemento contráctil activo del músculo, mientras que F(t) es la fuerza real que resulta después de tener en cuenta las propiedades mecánicas del músculo, y se asume que F0 = αF(t), donde 0 < α< 1; R representa la amortiguación viscosa inherente al tejido, mientras que Cp (elemento elástico paralelo) y Cs (elemento elástico en serie) reflejan las propiedades de almacenamiento elástico del sarcolema y los tendones musculares, respectivamente.
+El siguiente modelo matemático de tres EDOs de primer orden es un modelo mecanicista de compartimento para la eritropoyesis después de la pérdida de sangre en personas sanas, fenómeno que se puede modelizar como un proceso dinámico no lineal.  Con respecto a los parámetros, X0 refleja la cantidad absoluta de células que se destinan al linaje eritroide y que maduran en el primer compartimento de células precursoras eritroides. Las tasas de transición y las tasas de mortalidad entre los compartimentos están dadas por k1, k2 y , estas tasas son independientes de la hormona eritropoyetina. La compensación de la pérdida de sangre se describe mediante un término de retroalimentación de los eritrocitos a las células en proliferación basado en la pérdida fraccional de eritrocitos. Con base en lo anterior, se introducen los parámetros y , que se utilizan para la descripción de las características individuales de la eritropoyesis. Se asume que cada individuo tiene un recuento medio de eritrocitos indicado por el parámetro Base. 
 
-La configuración paralela se realiza para considerar las restricciones mecánicas impuestas a los componentes del modelo. Si el resorte Cp se estira en una longitud incremental x(t), toda la combinación en serie de R y Cs también se extenderá en la misma longitud. Además, la suma de la fuerza transmitida a través de las dos ramas de la configuración paralela debe ser igual a F(t). Aunque la suma de las extensiones de Cs y R tendrá que ser igual a x(t), las contribuciones individuales de longitud de Cs y R no necesitan ser iguales. Por lo tanto, si se asume que C\_{s} se estira una longitud x₁(t), entonces la extensión en la combinación paralela de R y F0 será x(t)-x₁(t). La velocidad con la que se extiende el amortiguador representado por R se obtiene al derivar x(t) - x1(t) con respecto al tiempo, es decir, d\[x(t) - x1(t)] /dt.
-
-Palabras clave: ???; ???; ???; ???; ???
+Palabras clave: Eritropoyesis; Regeneración de glóbulos rojos; Modelo matemático; Simulaciones numéricas.
 
 ## Lista de archivos incluidos en el repositorio
 
 1. Cuaderno computacional de MATLAB \[.mlx].
-2. Modelo de Simulink \[.slx].
-3. Archivos de Spyder \[.py].
-4. Imagen con los parámetros del controlador.
-5. Imágenes de las simulaciones \[.pdf y .png].
-6. Evidencia del análisis matemático: función de transferencia, error en estado estacionario y estabilidad en lazo abierto.
+2. Imágenes de las simulaciones \[.pdf y .png].
 
 ## Referencias
 
-\[1] P. A. Valle, Syllabus para Modelado de Sistemas Fisiológicos, Tecnológico Nacional de México / Instituto Tecnológico de Tijuana, Tijuana, B.C., México, 2025. Permalink: https://biomath.xyz/course/
+[1] P. A. Valle, Syllabus para Modelado de Sistemas Fisiológicos, Tecnológico Nacional de México / Instituto Tecnológico de Tijuana, Tijuana, B.C., México, 2025. Permalink: https://biomath.xyz/course/
 
-\[2] M. C. Khoo, Physiological Control Systems Analysis Simulation, and Estimation, 2nd ed. Piscataway, New Jersey, USA: IEEE Press, 2018, Section 4, Page 93.
+[2] M. C. Khoo, Physiological Control Systems Analysis Simulation, and Estimation, 2nd ed. Piscataway, New Jersey, USA: IEEE Press, 2018, Section 4, Page 93.
 
-\[3] N. S. Nise, Control Systems Engineering, 8th ed. Hoboken, New Jersey, USA: John Wiley \& Sons, 2020.
+[3]  M. Tetschke, P. Lilienthal, T. Pottgiesser, T. Fischer, E. Schalk & S. Sager, Mathematical Modeling of RBC Count Dynamics after Blood Loss , Processes, vol. 6, issue 9, Sep 2018. https://doi.org/10.3390/pr6090157
 
