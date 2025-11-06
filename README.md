@@ -1,6 +1,6 @@
 [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=nicolecq04/Practica4-MSF)
 
-# Práctica:Regeneración de glóbulos rojos
+# Práctica: Regeneración de glóbulos rojos
 
 ## Información de la estudiante
 
